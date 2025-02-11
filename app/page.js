@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import {  MapPin, Phone, User, Users, Heart, Mail, ArrowRight, Check } from "lucide-react";
+import Image from "next/image";
 
 const SuccessModal = ({ isVisible, onClose }) => {
   useEffect(() => {
@@ -98,10 +99,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-blue-600" />
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
-                Brandname
-              </h1>
+              <Image
+              src="/Screenshot 2025-02-11 080236.png"
+              alt="Brandname"
+              layout="intrinsic"
+              width={200}
+              height={100}
+              style={{maxWidth:"80%",height:"auto"}}
+
+              />
             </div>
             <div className="flex space-x-8">
               <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 flex items-center gap-2">
